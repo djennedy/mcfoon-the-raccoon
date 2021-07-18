@@ -26,9 +26,9 @@ public class Raccoon : MonoBehaviour
             // 0 here means left mouse button
             if(Input.GetMouseButtonDown(0))
             {
+                anim.SetTrigger("Fly");
                 rb2d.velocity = Vector2.zero;
                 rb2d.AddForce(new Vector2(0, upForce));
-                anim.SetTrigger("Fly");
             }
         }
     }
@@ -37,5 +37,6 @@ public class Raccoon : MonoBehaviour
     {
         isDead = true;
         anim.SetTrigger("Die");
+        GameControl.instance.BirdDied();
     }
 }
