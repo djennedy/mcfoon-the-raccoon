@@ -33,7 +33,7 @@ public class GameControl : MonoBehaviour
         }
     }
 
-    public void BirdDied()
+    public void RaccoonDied()
     {
         gameOverText.SetActive(true);
         gameOver = true;
