@@ -8,6 +8,7 @@ public class GameControl : MonoBehaviour
     public static GameControl instance;
     public GameObject gameOverText;
     public bool gameOver = false;
+    public float scrollSpeed = -1.5f;
 
     // Awake is called when it's initialized
     // So it can happen before start
