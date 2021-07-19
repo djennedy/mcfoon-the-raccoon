@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-    public GameObject columnPrefab;                                    //The column game object.
-    public int columnPoolSize = 5;                                    //How many columns to keep on standby.
-    public float spawnRate = 3f;                                    //How quickly columns spawn.
+    public GameObject columnPrefab;                                    
+    public int columnPoolSize = 5;                                    
+    public float spawnRate = 3f;                                   
     public float columnMin = -1f;                                    //Minimum y value of the column position.
     public float columnMax = 3.5f;                                    //Maximum y value of the column position.
 
@@ -21,19 +21,21 @@ public class NewBehaviourScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        columns = new GameObject[poolSize];
-        for(int = 0; i < poolSizel;i++){
-            columns[i] = (GameObject) Instantiate(columnPrefab, objectPoolPosition, Quaternion.identity); 
+        columns = new GameObject[columnPoolSize];
+        for(int i = 0; i < columnPoolSize;i++){
+            columns[i] = (GameObject) Instantiate(columnPrefab, poolPosition, Quaternion.identity); 
         }
     }
 
     // Update is called once per frame
+     //This spawns columns as long as the game is not over.
     void Update()
     {
         timeSinceSpawned += Time.deltaTime;
-        if(GameCOntrol.instance.gameOver == false && timeSinceSpawned);
-        {
-          timeSinceLastSpawned = 0f;
+
+        if (GameControl.instance.gameOver == false && timeSinceSpawned >= spawnRate) 
+        {    
+            timeSinceSpawned = 0f;
 
             //Set a random y position for the column
             float spawnYPosition = Random.Range(columnMin, columnMax);
@@ -44,11 +46,10 @@ public class NewBehaviourScript : MonoBehaviour
             //Increase the value of currentColumn. If the new size is too big, set it back to zero
             currentColumn ++;
 
-            if (currentColumn >= poolSize) 
+            if (currentColumn >= columnPoolSize) 
             {
                 currentColumn = 0;
             }
-        }   
-
+        }
     }
 }

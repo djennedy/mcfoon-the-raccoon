@@ -6,9 +6,9 @@ public class Column : MonoBehaviour
 {
     // Start is called before the first frame update
     private void OnTriggerEnter2D (Collider2D other){
-        if(other.GetComponent<Raccoon>()!-null)
+        if(other.GetComponent<Raccoon>()!=null)
         {
-                GameControl.instance.BirdScored();
+                GameControl.instance.RaccoonScored();
         }
     }
 }

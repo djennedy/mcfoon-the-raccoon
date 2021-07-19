@@ -564,7 +564,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 745508894}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91582861350b6224b9fe48d8f23e1388, type: 3}
+  m_Script: {fileID: 11500000, guid: 75b709a6eb5cc4fae9a993b5cc4106db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &745508900
@@ -576,7 +576,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 745508894}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c1fe02d989d44946ab88d1d2b0846dc, type: 3}
+  m_Script: {fileID: 11500000, guid: 4b5ff337a7d4a42b49bd447abc72b238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &757456853
@@ -653,7 +653,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: ac3817ecd3f3c934aac68f72084226f2, type: 3}
+    m_Font: {fileID: 12800000, guid: 4204b38ed46864a8bb3d6bff61ff2cd4, type: 3}
     m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 0
@@ -740,7 +740,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1156498712}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91582861350b6224b9fe48d8f23e1388, type: 3}
+  m_Script: {fileID: 11500000, guid: 75b709a6eb5cc4fae9a993b5cc4106db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!61 &1156498716
@@ -829,7 +829,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1156498712}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c1fe02d989d44946ab88d1d2b0846dc, type: 3}
+  m_Script: {fileID: 11500000, guid: 4b5ff337a7d4a42b49bd447abc72b238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1336966867
@@ -845,7 +845,6 @@ GameObject:
   - component: {fileID: 1336966870}
   - component: {fileID: 1336966871}
   - component: {fileID: 1336966873}
-  - component: {fileID: 1336966872}
   - component: {fileID: 1336966874}
   m_Layer: 0
   m_Name: Raccoon
@@ -1178,19 +1177,6 @@ PolygonCollider2D:
       - {x: -1.2773741, y: 0.17656238}
       - {x: -1.3972765, y: 0.15943347}
       - {x: -1.3972765, y: 0.17656238}
---- !u!114 &1336966872
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1336966867}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2afea9f6c523acf4c9027f7aa85eb267, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  upForce: 200
 --- !u!114 &1336966873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1200,7 +1186,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1336966867}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2afea9f6c523acf4c9027f7aa85eb267, type: 3}
+  m_Script: {fileID: 11500000, guid: 0d321cc2539a940938d6c6ea6500d7f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   upForce: 200
@@ -1214,7 +1200,7 @@ Animator:
   m_GameObject: {fileID: 1336966867}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 988c61ab48fdf4b478fdc19573a5c352, type: 2}
+  m_Controller: {fileID: 9100000, guid: 5a1eeb1bddc9642ec9dbc8153cfe91fb, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1278,7 +1264,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: ac3817ecd3f3c934aac68f72084226f2, type: 3}
+    m_Font: {fileID: 12800000, guid: 4204b38ed46864a8bb3d6bff61ff2cd4, type: 3}
     m_FontSize: 48
     m_FontStyle: 0
     m_BestFit: 0
@@ -1393,7 +1379,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: ac3817ecd3f3c934aac68f72084226f2, type: 3}
+    m_Font: {fileID: 12800000, guid: 4204b38ed46864a8bb3d6bff61ff2cd4, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -1522,12 +1508,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1986129385}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68815cb3a7e20614b8f0e4f8bb980e5d, type: 3}
+  m_Script: {fileID: 11500000, guid: 33417ccb2019c44b4b8de40d0369fb48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverText: {fileID: 1547724969}
   gameOver: 0
   scrollSpeed: -1.5
+  scoreText: {fileID: 757456856}
 --- !u!4 &1986129387
 Transform:
   m_ObjectHideFlags: 0
