@@ -5,10 +5,11 @@ using UnityEngine;
 public class Column : MonoBehaviour
 {
     // Start is called before the first frame update
-    private void OnTriggerEnter2D (Collider2D other){
-        if(other.GetComponent<Raccoon>()!=null)
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.GetComponent<Raccoon>() != null)
         {
-                GameControl.instance.RaccoonScored();
+            GameControl.instance.RaccoonScored();
         }
     }
 }

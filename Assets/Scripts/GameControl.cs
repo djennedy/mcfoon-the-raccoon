@@ -37,7 +37,7 @@ public class GameControl : MonoBehaviour
     public void RaccoonScored()
     {
         //The bird can't score if the game is over.
-        if (gameOver)    
+        if (gameOver)
             return;
         //If the game is not over, increase the score...
         score++;

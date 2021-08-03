@@ -33,7 +33,7 @@ public class Raccoon : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D()
+    void OnCollisionEnter2D()
     {
         rb2d.velocity = Vector2.zero;
         isDead = true;

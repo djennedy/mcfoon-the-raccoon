@@ -40,10 +40,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6126858355261048385}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68815cb3a7e20614b8f0e4f8bb980e5d, type: 3}
+  m_Script: {fileID: 11500000, guid: dba9829163ea3104e8327a1e83ddee11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOverText: {fileID: 5278113344838412327, guid: fc475aa8b6caba84ca1d103d90744308, type: 3}
+  gameOverText: {fileID: 5278113344838412327, guid: f8917bb1b82926442bc27d9d8559ae0a, type: 3}
   gameOver: 0
   scrollSpeed: -1.5
-  scoreText: {fileID: 1335117726955541102, guid: 960d2b6b15462c74686ef55bb36a5b75, type: 3}
+  scoreText: {fileID: 1335117726955541102, guid: d9c053049fb490d43bd17f43e697ceb7, type: 3}
