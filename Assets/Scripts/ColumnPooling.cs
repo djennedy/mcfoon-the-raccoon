@@ -6,19 +6,18 @@ public class ColumnPooling : MonoBehaviour
 {
     public GameObject columnPrefab;                                    
     public int columnPoolSize = 5;                                    
-    public float spawnRate = 3f;                                   
+    public float spawnRate = 4f;                                   
     public float columnMin = -1f;                                    //Minimum y value of the column position.
     public float columnMax = 3.5f;                                    //Maximum y value of the column position.
 
     private GameObject[] columns;                                    //Collection of pooled columns.
     private int currentColumn = 0;                                    //Index of the current column in the collection.
 
-    private Vector2 poolPosition = new Vector2 (-15,-25);        //A holding position for our unused columns offscreen.
-    private float spawnXPosition = 10f;
+    private Vector2 poolPosition = new Vector2 (-2,-40);        //A holding position for our unused columns offscreen.
+    private float spawnXPosition = 10;
 
     private float timeSinceSpawned;
 
-    // Start is called before the first frame update
     void Start()
     {
         columns = new GameObject[columnPoolSize];
